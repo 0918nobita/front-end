@@ -1,31 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "es2017",
-        "module": "esnext",
-        "lib": [
-            "esnext",
-            "dom"
-        ],
-        "noEmit": true,
-
-        /* 詳細オプション */
-        "locale": "ja",
-        "forceConsistentCasingInFileNames": true,
-
-        /* Strict 型チェック オプション */
-        "strict": true,
-
-        /* 追加のチェック */
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-
-        /* モジュール解決のオプション */
-        "moduleResolution": "node",
-        "esModuleInterop": true
-    },
-    "include": [
-        "src"
-    ]
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client"],
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
+  },
+  "include": ["./src"]
 }

@@ -9,9 +9,9 @@
         "dev": "fusuma start"
     },
     "devDependencies": {
-        "fusuma": "^2.8.4"
-    },
-    "dependencies": {
-        "react": "^17.0.2"
+        "fusuma": "^2.8.4",
+        "react": "^17.0.2",
+        "webpack": "^5.41.1",
+        "webpack-cli": "^4.7.2"
     }
 }

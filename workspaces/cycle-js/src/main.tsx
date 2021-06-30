@@ -1,13 +1,15 @@
-import * as Snabbdom from 'snabbdom-pragma';
+/** @jsx Snabbdom.createElement */
+
+import Snabbdom from 'snabbdom-pragma';
 import { run, Sources } from '@cycle/run';
 import { makeDOMDriver } from '@cycle/dom';
 import xs, { Stream } from 'xstream';
 
 const drivers = {
-    DOM: makeDOMDriver('#app-container')
+    DOM: makeDOMDriver('#app')
 };
 
-function main(sources: Sources<typeof drivers>) {
+const main = (sources: Sources<typeof drivers>) => {
     const action$: Stream<number> = xs.merge(
         sources.DOM.select('.decrement').events('click').map(() => -1),
         sources.DOM.select('.increment').events('click').map(() => 1)

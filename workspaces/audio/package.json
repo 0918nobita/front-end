@@ -5,27 +5,15 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "build": "rollup -c",
-        "dev": "rollup -c -w",
-        "lint": "eslint ./src/*.ts",
-        "format": "eslint ./src/*.ts --fix"
-    },
-    "devDependencies": {
-        "@rollup/plugin-node-resolve": "^13.0.0",
-        "@typescript-eslint/eslint-plugin": "^4.28.1",
-        "@typescript-eslint/parser": "^4.28.1",
-        "eslint": "^7.29.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-prettier": "^3.4.0",
-        "eslint-plugin-simple-import-sort": "^7.0.0",
-        "prettier": "^2.3.2",
-        "rollup": "^2.52.4",
-        "rollup-plugin-serve": "^1.1.0",
-        "rollup-plugin-terser": "^7.0.2",
-        "rollup-plugin-typescript2": "^0.30.0",
-        "typescript": "^4.3.4"
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "serve": "vite preview"
     },
     "dependencies": {
         "rxjs": "^7.1.0"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.4",
+        "vite": "^2.3.8"
     }
 }

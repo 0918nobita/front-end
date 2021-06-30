@@ -2,5 +2,9 @@
     "private": true,
     "workspaces": [
         "workspaces/*"
-    ]
+    ],
+    "resolutions": {
+        "trim": "0.0.3",
+        "trim-newlines": "3.0.1"
+    }
 }

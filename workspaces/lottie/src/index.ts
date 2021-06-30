@@ -13,6 +13,8 @@ const item = lottie.loadAnimation(
     }
 );
 
+item.loop = false;
+
 playButton?.addEventListener('click', () => {
     item.play();
 });
